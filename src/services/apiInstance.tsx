@@ -1,9 +1,5 @@
-// import { isTokenValid } from "@/utils";
-
 import axios, { CreateAxiosDefaults } from "axios";
 import { getAuthToken, setAuthToken } from "../localStorage";
-import { resetStateData } from "../utils";
-import { useAppDispatch } from "../redux/store";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const apiInstanceConfig: CreateAxiosDefaults<any> = {

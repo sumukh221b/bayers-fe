@@ -16,11 +16,11 @@ const routes = [
   {
     path: "/dashboard",
     element: <Dashboard />,
-  },  {
+  },
+  {
     path: "/wellness",
     element: <Wellness />,
   },
 ];
-
 const router = createBrowserRouter(routes);
 export default router;

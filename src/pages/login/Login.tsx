@@ -1,24 +1,24 @@
-import LoginImage from "@/assets/images/loginlogo.png";
+import LoginImage from "../../assets/images/loginlogo.png";
 import UserLogin from "./UserLogin";
-// import { TabRouteNames } from "@/types";
-// import LoginSuccess from "./LoginSuccess";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useAppSelector } from "../../redux/store";
+import { loginSelector } from "../../redux/auth/authSlice";
 
 const Login = () => {
   const navigate = useNavigate();
-  //   const user = useAppSelector(userData);
+  const { success } = useAppSelector(loginSelector);
 
   useEffect(() => {
-    // navigate(`/Dashboard`);
-  }, [navigate]);
+    if (success) {
+      navigate(`/dashboard`);
+    }
+  }, [success]);
 
   return (
     <div className="flex items-center justify-start w-screen h-screen">
       <div className="flex flex-col items-center justify-center w-1/2 p-4">
-        <div className="w-[22.5rem]">
-          <UserLogin />
-        </div>
+        <div className="w-[22.5rem]">{!success && <UserLogin />}</div>
       </div>
       <div className="relative w-1/2 h-full">
         <div className="w-full h-full">

@@ -1,8 +1,5 @@
-// import { SpriteIconIds } from "@/types";
-// import { Tooltip } from "@mantine/core";
 import { ErrorMessage, Field } from "formik";
 import { FC, ReactNode } from "react";
-// import Icon from "../icon/Icon";
 import "../form/style.scss";
 export type FormFieldProps = {
   type: string;
