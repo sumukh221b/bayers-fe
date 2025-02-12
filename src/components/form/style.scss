@@ -1,0 +1,52 @@
+.mantine-Input-root.mantine-Autocomplete-root {
+  .mantine-Input-wrapper.mantine-Autocomplete-wrapper {
+    height: 40px !important;
+  }
+}
+
+.mantine-InputWrapper-root.mantine-TextInput-root {
+  width: 100% !important;
+}
+
+.mantine-Input-input,
+.mantine-Input-input.mantine-Autocomplete-input {
+  font-size: 14px;
+  border: 1px solid var(--mantine-color-neutral-1);
+  border-radius: 8px;
+  background-color: white !important;
+
+  &::placeholder {
+    font-family: "Space Grotesk";
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: var(--mantine-color-neutral-4);
+    letter-spacing: 0.2px;
+  }
+  &:focus {
+    border: 1px solid #695fde;
+    box-shadow: 0px 12px 16px -4px #5c47d00f;
+  }
+}
+
+.error {
+  &.mantine-InputWrapper-root.mantine-TextInput-root,
+  &.mantine-InputWrapper-root.mantine-Autocomplete-root {
+    .mantine-Input-input,
+    .mantine-Autocomplete-input {
+      border: 1px solid var(--mantine-color-danger-7);
+      box-shadow: 0px 12px 16px -4px #d047470f;
+    }
+  }
+}
+
+.mantine-Autocomplete-dropdown {
+  box-shadow: 0px 4px 6px -2px #10182808;
+  box-shadow: 0px 12px 16px -4px #10182814;
+}
+
+.mantine-Autocomplete-option {
+  padding: 10px 12px;
+  color: #5b5d86;
+  font-size: var(--mantine-font-size-bm);
+  font-weight: 500;
+}

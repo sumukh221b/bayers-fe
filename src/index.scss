@@ -1,0 +1,56 @@
+@import url("./theme/SpaceGrotesk.scss");
+@layer tailwind {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* $bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  // font-family: "Space Grotesk";
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  // font-family: "Space Grotesk";
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+.mantine-Grid-root {
+  --grid-gutter: 0 !important;
+}
+.mantine-Grid-inner {
+  width: 100%;
+  height: 100%;
+}
+.mantine-Grid-col {
+  padding: 0 !important;
+}

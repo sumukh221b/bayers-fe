@@ -1,0 +1,18 @@
+.biometric {
+  --currentColor: #4b4b72;
+  .fingerprint {
+    &.init {
+      --currentColor: inherit;
+    }
+    &.success {
+      --currentColor: #0eb266;
+    }
+    &.failure {
+      --currentColor: red;
+    }
+  }
+}
+
+svg.add {
+  --currentColor: white !important;
+}
