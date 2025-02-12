@@ -30,8 +30,8 @@ const Button: FC<ButtonProps> = ({
     c: "white",
     fz: "14",
     fw: "500",
-    px: "16",
-    py: "10",
+    px: "40",
+    py: "20",
     radius: 8,
     ...props,
   };
