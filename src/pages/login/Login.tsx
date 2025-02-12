@@ -1,4 +1,4 @@
-// import LoginImage from "@/assets/images/login.png";
+import LoginImage from "@/assets/images/loginlogo.png";
 import UserLogin from "./UserLogin";
 // import { TabRouteNames } from "@/types";
 // import LoginSuccess from "./LoginSuccess";
@@ -20,7 +20,7 @@ const Login = () => {
           <UserLogin />
         </div>
       </div>
-      {/* <div className="relative w-1/2 h-full">
+      <div className="relative w-1/2 h-full">
         <div className="w-full h-full">
           <img
             src={LoginImage}
@@ -28,7 +28,7 @@ const Login = () => {
             className="object-fill w-full h-full"
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

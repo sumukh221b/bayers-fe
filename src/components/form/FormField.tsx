@@ -9,8 +9,6 @@ export type FormFieldProps = {
   placeholder?: string;
   fieldName: string;
   label?: string;
-  tooltipLabel?: string;
-  data?: { label: string; value: string }[];
   actionHandler?: () => void;
   leftSection?: ReactNode;
   rightSection?: ReactNode;
@@ -24,8 +22,6 @@ const FormField: FC<FormFieldProps> = ({
   label,
   type,
   placeholder,
-  tooltipLabel,
-  data,
   actionHandler,
   leftSection,
   rightSection,
@@ -33,21 +29,13 @@ const FormField: FC<FormFieldProps> = ({
   fullWidth,
   disabled,
 }) => {
-  //   const isDropdown = type === "select";
-
-  //   if (isDropdown && (data === undefined || data === null)) return;
-
   return (
     <div
       className={`h-full flex flex-col justify-start items-start gap-y-2 ${
         fullWidth ? "w-full" : "w-[200px]"
       }`}>
       {label && (
-        <label
-          htmlFor={fieldName}
-          className={`text-bs font-medium capitalize ${
-            tooltipLabel && "w-full flex justify-start items-center gap-x-1"
-          }`}>
+        <label htmlFor={fieldName} className="font-medium capitalize text-bs">
           {label}
         </label>
       )}
@@ -55,11 +43,9 @@ const FormField: FC<FormFieldProps> = ({
         id={fieldName}
         name={fieldName}
         type={type}
-        // data={isDropdown ? data : null}
         placeholder={
           placeholder ? placeholder : `Enter ${label && label.toLowerCase()}`
         }
-        // component={formikFieldComponent}
         actionHandler={actionHandler}
         leftSection={leftSection}
         rightSection={rightSection}
