@@ -63,7 +63,7 @@ const SamplePage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className=" flex items-center justify-center bg-gray-100">
       <DataList items={sampleData} />
     </div>
   );
