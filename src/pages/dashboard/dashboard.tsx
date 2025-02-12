@@ -26,6 +26,7 @@ const Navbar = () => {
     className: "text-medium font-medium h-20 font-inter px-30 py-10 rounded-lg"
   }}
 />
+
 <Button
   label={"Register"}
   inputButton
